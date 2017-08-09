@@ -1,5 +1,4 @@
 import sys
-sys.path.insert(0, '../src/')
 from detect import AttackDetector, Record
 from Record import Record
 import unittest
