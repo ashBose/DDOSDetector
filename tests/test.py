@@ -42,7 +42,7 @@ class AttackDetectorTests(unittest.TestCase):
 			240000)
 
 	def test_split_fields(self):
-		r = self.test_obj.splitFields("200.4.91.190 - - [25/May/2015:23:11:15 +0000] "
+		r = self.test_obj.split_fields("200.4.91.190 - - [25/May/2015:23:11:15 +0000] "
 		                              "\"GET / HTTP/1.0\" 200 3557 \"-\" \"Mozilla/4.0 "
 		                              "(compatible; MSIE 6.0; Windows NT 5.1; SV1)")
 		self.assertIsInstance(r, Record)
