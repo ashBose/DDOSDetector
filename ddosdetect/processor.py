@@ -15,8 +15,6 @@ class AttackDetector(object):
 			difference = difference.seconds * 1000
 		except TypeError, e:
 			raise e
-		finally:
-			return difference
 
 	def load_input(self, input_file):
 		record_list = []
